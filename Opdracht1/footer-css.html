@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Razer Footer - CSS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; font-family: Arial, Helvetica, sans-serif; }
+
+  .footer { color: #b4b4b4; padding: 35px 60px 0; }
+  .footer-top { display: flex; gap: 70px; padding-bottom: 40px; }
+
+  .col h4 { color: #fff; font-size: 16px; margin-bottom: 22px; }
+  .col ul { list-style: none; }
+  .col ul li { margin-bottom: 14px; }
+  .col ul li a { color: #b4b4b4; text-decoration: none; font-size: 14px; }
+  .col ul li a:hover { color: #fff; }
+
+  .socials { display: flex; flex-direction: column; gap: 16px; }
+  .socials a {
+    width: 30px; height: 30px; border-radius: 50%;
+    background: #2a2a2a; color: #b4b4b4;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; text-decoration: none;
+  }
+  .socials a:hover { color: #fff; }
+
+  .tagline { margin-left: auto; color: #44d62c; font-weight: bold; font-size: 17px; }
+
+  .divider { border: none; border-top: 1px solid #2a2a2a; }
+
+  .footer-bottom {
+    display: flex; align-items: center; gap: 30px;
+    padding: 22px 0 30px; font-size: 14px;
+  }
+  .footer-bottom a { color: #b4b4b4; text-decoration: none; }
+  .footer-bottom a:hover { color: #fff; }
+  .sep { color: #555; }
+  .location { margin-left: auto; }
+  .location .country { color: #fff; font-weight: bold; }
+  .location a { margin-left: 8px; }
+
+  .scroll-top {
+    position: fixed; right: 30px; bottom: 25px;
+    width: 55px; height: 55px; border-radius: 50%;
+    background: #1c1c1c; color: #44d62c;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">RazerStores</a></li>
+          <li><a href="#">RazerCafe</a></li>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Purchase Programs</a></li>
+          <li><a href="#">Bulk Order Program</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Only at Razer</a></li>
+          <li><a href="#">Razer Silver</a></li>
+          <li><a href="#">Affiliate</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Chroma RGB</a></li>
+          <li><a href="#">Concepts</a></li>
+          <li><a href="#">Esports</a></li>
+          <li><a href="#">Collabs</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Get Help</a></li>
+          <li><a href="#">Registration &amp; Warranty</a></li>
+          <li><a href="#">RazerStore Support</a></li>
+          <li><a href="#">RazerCare</a></li>
+          <li><a href="#">Manage Razer ID</a></li>
+          <li><a href="#">Support Videos</a></li>
+          <li><a href="#">Recycling Program</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">zVentures</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">AI Gaming Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-threads"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-twitch"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+      </div>
+      <div class="tagline">FOR GAMERS. BY GAMERS.&trade;</div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="footer-bottom">
+      <span>Copyright &copy; 2026 Razer Inc. All rights reserved.</span>
+      <a href="#">Site Map</a>
+      <span class="sep">|</span>
+      <a href="#">Legal Terms</a>
+      <span class="sep">|</span>
+      <a href="#">Privacy Policy</a>
+      <span class="sep">|</span>
+      <a href="#">Cookie Settings</a>
+      <div class="location">
+        <span class="country">United States</span>
+        <span class="sep">|</span>
+        <a href="#">Change Location &gt;</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top"><i class="fa-solid fa-chevron-up"></i></a>
+</body>
+</html>
