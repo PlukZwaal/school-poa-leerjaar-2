@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NU.nl navbar - CSS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; background: #fff; color: #1a1a1a; }
+
+  .topnav {
+    display: flex; align-items: center; gap: 32px;
+    padding: 18px 40px; border-bottom: 1px solid #ececec;
+  }
+  .logo {
+    width: 34px; height: 34px; border-radius: 50%; background: #001f4d;
+    color: #fff; display: flex; align-items: center; justify-content: center;
+    font-weight: bold; font-size: 15px; position: relative;
+  }
+  .logo::after {
+    content: ""; position: absolute; top: 4px; right: 3px;
+    width: 6px; height: 6px; border-radius: 50%; background: #e6007e;
+  }
+  .topnav a { text-decoration: none; font-weight: bold; font-size: 16px; }
+  .topnav .link { color: #1a1a1a; }
+  .topnav .economie { color: #0a5ad3; }
+  .topnav .sport { color: #e63312; }
+  .topnav .media { color: #d6007e; }
+  .topnav .minder { display: flex; align-items: center; gap: 6px; }
+  .topnav .right { margin-left: auto; display: flex; align-items: center; gap: 26px; }
+  .topnav .right i { color: #1a1a1a; font-size: 18px; }
+  .topnav .inloggen { display: flex; align-items: center; gap: 8px; color: #1a1a1a; }
+
+  .menu {
+    display: grid; grid-template-columns: repeat(6, 1fr);
+    gap: 20px 30px; padding: 35px 80px 60px;
+  }
+  .menu .col h3 { font-size: 16px; margin-bottom: 22px; }
+  .menu .col a { display: block; color: #1a1a1a; text-decoration: none; font-size: 15px; margin-bottom: 20px; }
+  .menu .col a:hover { text-decoration: underline; }
+
+  h3.voorpagina { color: #1a1a1a; }
+  h3.economie { color: #0a5ad3; }
+  h3.sport { color: #e63312; }
+  h3.media { color: #d6007e; }
+  h3.overig { color: #008a8a; }
+  h3.spellen { color: #1a1a1a; }
+
+  .col.bold a { font-weight: bold; }
+</style>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="logo">nu</div>
+    <a href="#" class="link">Net binnen</a>
+    <a href="#" class="link">Algemeen</a>
+    <a href="#" class="economie">Economie</a>
+    <a href="#" class="sport">Sport</a>
+    <a href="#" class="media">Media, Cultuur en Achterklap</a>
+    <a href="#" class="link">Shop</a>
+    <a href="#" class="link minder">Minder <i class="fa-solid fa-chevron-up" style="font-size:12px;"></i></a>
+    <div class="right">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-gear"></i>
+      <a href="#" class="inloggen"><i class="fa-solid fa-user"></i> Inloggen</a>
+    </div>
+  </nav>
+
+  <div class="menu">
+    <div class="col">
+      <h3 class="voorpagina">Voorpagina</h3>
+      <a href="#">Net binnen</a>
+      <a href="#">Binnenland</a>
+      <a href="#">Buitenland</a>
+      <a href="#">Politiek</a>
+      <a href="#">Video</a>
+      <a href="#">Podcast</a>
+      <a href="#">Weer</a>
+    </div>
+    <div class="col">
+      <h3 class="economie">Economie</h3>
+      <a href="#">Klimaat</a>
+      <a href="#">Tech</a>
+    </div>
+    <div class="col">
+      <h3 class="sport">Sport</h3>
+      <a href="#">Voetbal</a>
+      <a href="#">WK voetbal</a>
+      <a href="#">Formule 1</a>
+      <a href="#">Wielrennen</a>
+      <a href="#">Sport Overig</a>
+      <a href="#">Scorebord</a>
+    </div>
+    <div class="col">
+      <h3 class="media">Media, Cultuur en Achterklap</h3>
+      <a href="#">Films en series</a>
+      <a href="#">Muziek</a>
+      <a href="#">Boek en Cultuur</a>
+      <a href="#">Media</a>
+      <a href="#">Achterklap</a>
+      <a href="#">Koningshuis</a>
+      <a href="#">Tv-gids</a>
+    </div>
+    <div class="col">
+      <h3 class="overig">Overig</h3>
+      <a href="#">Dieren</a>
+      <a href="#">NUjij</a>
+      <a href="#">Opmerkelijk</a>
+      <a href="#">Wetenschap</a>
+      <a href="#">Goed Nieuws</a>
+    </div>
+    <div class="col bold">
+      <h3 class="spellen">Spellen</h3>
+      <a href="#">Voor jou</a>
+      <a href="#">Van de redactie</a>
+      <a href="#">NUshop</a>
+      <a href="#">Adverteren</a>
+    </div>
+  </div>
+</body>
+</html>
